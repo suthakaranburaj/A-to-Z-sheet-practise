@@ -29,7 +29,7 @@ class Solution {
             }
             else{
                 ansc=v[mid];
-                ansf=v[mid];
+                ansf=v[mid];//hello
                 break;
             }
         }
