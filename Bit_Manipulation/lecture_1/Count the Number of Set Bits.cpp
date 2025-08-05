@@ -15,7 +15,13 @@ using namespace std;
 void solve() {
     int n;
     cin>>n;
-    cout<<((n & 1) ? "Odd" : "Even")<<endl;
+    int ans = 0;
+    while(n){
+        if(n & 1){
+            ans++;
+        }
+    }
+    cout<<ans<<endl;
 }
 
 int main() {

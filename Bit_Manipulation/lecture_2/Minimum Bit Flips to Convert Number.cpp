@@ -13,9 +13,16 @@ using namespace std;
     Happy Coding
 */
 void solve() {
-    int n;
-    cin>>n;
-    cout<<((n & 1) ? "Odd" : "Even")<<endl;
+    int a , b;
+    cin>>a>>b;
+    int c = a ^ b;
+    int ans = 0;
+    while(c){
+        ans = ans + (c & 1);
+        c = c >> 1;
+
+    }
+    cout<<ans<<endl;
 }
 
 int main() {

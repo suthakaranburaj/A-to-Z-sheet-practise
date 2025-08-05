@@ -13,9 +13,13 @@ using namespace std;
     Happy Coding
 */
 void solve() {
-    int n;
-    cin>>n;
-    cout<<((n & 1) ? "Odd" : "Even")<<endl;
+    int a,b;
+    cin>>a>>b;
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+    cout<<"a:"<<a<<"b:"<<b<<endl;
 }
 
 int main() {
@@ -26,9 +30,9 @@ int main() {
 #endif
     fastio;
     
-    int a;
-    cin>>a;
-    while(a--) {
+    int T;
+    cin>>T;
+    while(T--) {
         solve();
     }
     return 0;
